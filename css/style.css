@@ -1,15 +1,9 @@
 :root{
     --negro: rgb(0, 0, 0);
     --blanco: white;
-    --secundario: #8b7470; 
-    --terciario: #6f0817;
-    --terciario2: #772330;
     --clarito: #b9b9b9;
     --gris-claro:#919191;
     --gris: #5c5b5b;
-    --verdeclarito:#b3c04e;
-    --verdefondo: #e6ecd6;
-    --rojoclarito: #af8d87;
     --fuentePrincipal: 'IBM Plex Sans Condensed', sans-serif;
 }
 
@@ -62,11 +56,12 @@ header{
     color: black;
     display: block;
     padding: 0.5rem 1rem;
-    transition: all 0.4s linear;
+    transition: all 300ms ease;
     border-radius: 5px;
 }
 .navigation ul li a:hover{
     background: rgb(228, 228, 172);
+    transform: scale(1.1);
 }
 nav{
     background-color:beige;
@@ -107,8 +102,8 @@ nav ul li{
 /*FORMULARIO*/
 
 .formulario{
-    width: 1000px;
-    height: 1000px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 20px;
@@ -120,11 +115,10 @@ nav ul li{
     border-radius: 40px 100px;
 }
 .form{
-    width: 500px;
+    width: 100%;
     background: beige;
     padding: 20px;
     border-radius: 20px 70px;
-    margin-left: 400px;
 }
 
 .form-title {
@@ -135,11 +129,12 @@ nav ul li{
     background: rgb(243, 243, 191);
     padding: 10px;
     font-size: 20px;
-    color: var(--blanco);
+    color: var(--negro);
     text-transform: uppercase;
     border-radius: 20px;
 }
 .form-lain{
+    color:var(--gris);
     background: rgb(231, 221, 221);
     display: flex;
     flex-direction: column;
@@ -154,7 +149,7 @@ nav ul li{
     font-size: 10px;
     padding: 5px;
     text-transform: uppercase;
-    color: var(--blanco);
+    color: var(--gris);
     background: var(--secundario);
     border-radius: 10px;
 }
@@ -201,6 +196,14 @@ nav ul li{
 .form-boton:hover{
     background-color: rgb(207, 199, 199);
     transition: 0.4s;
+}
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ubicacion iframe{
+    width: 100%;
 }
 /**INDEX**/
 .itt{
@@ -309,4 +312,21 @@ footer{
     margin: 20px;
     padding: 20px;
     margin-bottom: 10px;
+    background-color: #b3c04e;
+}
+
+
+
+/*RESPONSIVE*/
+/*TABLET*/
+@media screen and (max-width: 850px) {
+    nav ul li{
+        margin: 40px 20px 0px 0px;
+    }
+}
+/*CELULAR*/
+@media screen and (max-width: 420px){
+    nav ul li a{
+        font-size: 5px;
+    }
 }
