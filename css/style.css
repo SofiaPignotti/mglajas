@@ -241,7 +241,7 @@ nav ul li{
     max-width: 1000px;
     margin: auto;
     padding: 60px;
-    margin-top: 20px;
+    margin-top: 20px;   
 }
 
 .parrafo-imagen{
@@ -251,6 +251,15 @@ nav ul li{
     font-weight: bold;
     text-decoration-color: rgb(236, 187, 95);
     font-style:italic;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center ;
+    gap: 30px;
+    padding: 40px;
+    padding-bottom: 70px;
+    border-radius: 40px;
+    box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.5);
+    transition: 0.3s;
     }
     
 .lista-revestimientos{
@@ -328,5 +337,12 @@ footer{
 @media screen and (max-width: 420px){
     nav ul li a{
         font-size: 5px;
+    }   
+    .parrafo-imagen{
+        font-size: 10px;
+        grid-template-columns: repeat(1, 1fr);  
+    }
+    .column{
+        padding: 0px;   
     }
 }
