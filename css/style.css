@@ -35,21 +35,20 @@ body{
     width: 1100px;
     margin: 0px auto;
 }
-header{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
+.header{
+
 }
 .logo-nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 .navigation ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 100%;
 }
 
 .navigation ul li a{
@@ -63,9 +62,15 @@ header{
     background: rgb(228, 228, 172);
     transform: scale(1.1);
 }
+.navigation ul a img{
+    height: 130px;
+}
+.navigation{
+    width: 100%;
+}
 nav{
     background-color:beige;
-    height: 100px;
+    height: auto;
 }
 ul{
     Margin-bottom: “x”;
@@ -318,9 +323,8 @@ ul{
 }
 footer{
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
     padding: 20px;
-    margin-bottom: 10px;
     background-color: #b3c04e;
 }
 
@@ -337,6 +341,7 @@ footer{
 @media screen and (max-width: 420px){
     nav ul li a{
         font-size: 5px;
+
     }   
     .parrafo-imagen{
         font-size: 10px;
