@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuentePrincipal);
+    text-decoration: none;
+}
+@import "./header";
+@import "./main";
+@import "./footer";
+@import "./media";
