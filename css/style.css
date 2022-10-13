@@ -65,18 +65,20 @@ header {
 main {
   /**REVESTIMIENTOS**/
   /**NOSOTROS**/
-  /**CONTACTOS**/ }
+  /*FORMULARIO*/
+  /**INDEX**/
+  /**PREGUNTAS FRECUENTES**/ }
+  main h1 {
+    padding-top: 12rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #c5891a; }
   main .imggg {
     height: 400px;
     width: auto;
     background-image: url(../assets/img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
-    main .imggg h1 {
-      padding-top: 12rem;
-      text-align: center;
-      margin-top: 20px;
-      color: #c5891a; }
   main .content {
     float: none;
     width: 100%;
@@ -101,12 +103,12 @@ main {
     border-radius: 40px;
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
     transition: 0.3s; }
-    main .imagenes-grid .img {
+    main .imagenes-grid .imagenes-grid img {
       height: 300px;
       width: 300px;
       box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
       transition: 0.3s; }
-      main .imagenes-grid .img:hover {
+      main .imagenes-grid .imagenes-grid img:hover {
         transform: scale(1.1);
         transition: 0.6s; }
   main .column {
@@ -135,7 +137,7 @@ main {
       text-align: center;
       font-size: 10px;
       padding-top: 30px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
   main .psn {
     margin: 20px;
     padding: 20px;
@@ -157,80 +159,127 @@ main {
     background: var(--gris-claro);
     box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.5);
     border-radius: 40px 100px; }
-    main .formulario .form {
-      width: 100%;
-      background: beige;
-      padding: 20px;
-      border-radius: 20px 70px; }
-    main .formulario .form-title {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-      margin-bottom: 5px;
-      background: #f3f3bf;
+  main .form {
+    width: 100%;
+    background: beige;
+    padding: 20px;
+    border-radius: 20px 70px; }
+  main .form-title {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background: #f3f3bf;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--negro);
+    text-transform: uppercase;
+    border-radius: 20px; }
+  main .form-lain {
+    color: var(--gris);
+    background: #e7dddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 25px;
+    border-radius: 40px 70px; }
+  main .form-label {
+    margin: 10px;
+    font-size: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: var(--gris);
+    background: var(--secundario);
+    border-radius: 10px; }
+  main .form-input {
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px; }
+  main .form-select {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    color: var(--gris-claro); }
+  main .form-textarea {
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: center; }
+  main .form-boton {
+    width: 30%;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: var(--blanco);
+    background: gray;
+    border: none;
+    border-radius: 10px; }
+    main .form-boton:hover {
+      background-color: #cfc7c7;
+      transition: 0.4s; }
+  main .ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  main .ubicacion iframe {
+    width: 100%; }
+  main .itt {
+    margin: 50px;
+    text-align: center; }
+  main .imagenes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+    padding: 40px;
+    padding-bottom: 70px;
+    border-radius: 40px;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s; }
+  main .imagenes-grid img {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s; }
+  main .imagenes-grid img:hover {
+    transform: scale(1.1);
+    transition: 0.6s; }
+  main * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuentePrincipal);
+    text-decoration: none; }
+  main .contor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    margin-top: 20px; }
+    main .contor .titu {
+      text-align: center;
+      margin-top: 20px;
       padding: 10px;
-      font-size: 20px;
-      color: var(--negro);
-      text-transform: uppercase;
-      border-radius: 20px; }
-      main .formulario .form-title .form-lain {
-        color: var(--gris);
-        background: #e7dddd;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 30px;
-        font-size: 25px;
-        border-radius: 40px 70px; }
-        main .formulario .form-title .form-lain .form-label {
-          margin: 10px;
-          font-size: 10px;
-          padding: 5px;
-          text-transform: uppercase;
-          color: var(--gris);
-          background: var(--secundario);
-          border-radius: 10px; }
-        main .formulario .form-title .form-lain .form-input {
-          width: 70%;
-          height: 40px;
-          text-align: center;
-          border-radius: 5px;
-          border: none;
-          font-size: 16px; }
-        main .formulario .form-title .form-lain .form-select {
-          width: 100%;
-          height: 50px;
-          text-align: center;
-          border-radius: 5px;
-          border: none;
-          font-size: 25px;
-          color: var(--gris-claro); }
-        main .formulario .form-title .form-lain .form-textarea {
-          width: 100%;
-          height: 70px;
-          border-radius: 5px;
-          font-size: 18px;
-          text-align: center;
-          vertical-align: center; }
-        main .formulario .form-title .form-lain .form-boton {
-          width: 30%;
-          height: 30px;
-          margin-top: 30px;
-          margin-bottom: 20px;
-          font-size: 30px;
-          color: var(--blanco);
-          background: gray;
-          border: none;
-          border-radius: 10px; }
-        main .formulario .form-title .form-lain:hover {
-          background-color: #cfc7c7;
-          transition: 0.4s; }
-        main .formulario .form-title .form-lain .ubicacion {
-          display: flex;
-          flex-direction: column;
-          justify-content: center; }
-        main .formulario .form-title .form-lain .ubicacion iframe {
-          width: 100%; }
+      font-style: italic; }
+    main .contor .colocacion-pago {
+      text-align: center; }
+    main .contor ul {
+      list-style-type: none; }
+    main .contor .mg {
+      margin: 30px; }
+    main .contor .lista-mg {
+      font-style: italic;
+      font-weight: bold; }
 
 footer {
   text-align: center;

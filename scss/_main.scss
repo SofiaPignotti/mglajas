@@ -1,204 +1,271 @@
 main {
-    .imggg{
-        height: 400px;
-        width: auto;
-        background-image: url(../assets/img/principal.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        h1{
-            padding-top: 12rem;
-            text-align: center;
-            margin-top: 20px;
-            color: rgb(197, 137, 26);
-        }
+  h1 {
+    padding-top: 12rem;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(197, 137, 26);
+  }
+  .imggg {
+    height: 400px;
+    width: auto;
+    background-image: url(../assets/img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content {
+    float: none;
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(212, 209, 165);
+    text-align: center;
+    .mg {
+      margin: 30px;
     }
-    .content{
-        float: none;
-        width: 100%;
-        min-height: 200px;
-        background-color: rgb(212, 209, 165);
-        text-align:center;
-        .mg{
-            margin: 30px;
-        }
-        .lista-mg{
-            font-style: italic;
-            font-weight: bold;
-        }
+    .lista-mg {
+      font-style: italic;
+      font-weight: bold;
     }
-    .itt{
-        margin: 50px;
-        text-align: center;
+  }
+  .itt {
+    margin: 50px;
+    text-align: center;
+  }
+  .imagenes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+    padding: 40px;
+    padding-bottom: 70px;
+    border-radius: 40px;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    .imagenes-grid img {
+      height: 300px;
+      width: 300px;
+      box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.6s;
+      }
     }
-    .imagenes-grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center ;
-        gap: 30px;
-        padding: 40px;
-        padding-bottom: 70px;
-        border-radius: 40px;
-        box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.5);
-        transition: 0.3s;
-        .img{
-            height: 300px;
-            width: 300px;
-            box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
-            transition: 0.3s;
-            &:hover{
-                transform: scale(1.1);
-                transition: 0.6s;
-            }
-        }
+  }
+
+  /**REVESTIMIENTOS**/
+  .column {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    margin-top: 20px;
+    .parrafo-imagen {
+      text-align: center;
+      padding-top: 50px;
+      font-size: 15px;
+      font-weight: bold;
+      text-decoration-color: rgb(236, 187, 95);
+      font-style: italic;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      gap: 30px;
+      padding: 40px;
+      padding-bottom: 70px;
+      border-radius: 40px;
+      box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+      transition: 0.3s;
     }
 
-    /**REVESTIMIENTOS**/
-    .column{
-        width: 100%;
-        max-width: 1000px;
-        margin: auto;
-        padding: 60px;
-        margin-top: 20px;   
-        .parrafo-imagen{
-            text-align:center;
-            padding-top: 50px;
-            font-size: 15px;
-            font-weight: bold;
-            text-decoration-color: rgb(236, 187, 95);
-            font-style:italic;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center ;
-            gap: 30px;
-            padding: 40px;
-            padding-bottom: 70px;
-            border-radius: 40px;
-            box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.5);
-            transition: 0.3s;
-            }
-            
-        .lista-revestimientos{
-            text-align: center;
-            font-size: 10px;
-            padding-top: 30px;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-         }
-        /**NOSOTROS**/
-        .psn{
-            margin: 20px;
-            padding: 20px;
-            font-weight: bold;
-            text-align: center;
-            color: rgb(197, 137, 26);
-            font-size:larger;
-        }
-        .lista-sn{
-            text-align: center;
-        }
-        /**CONTACTOS**/
-        .formulario{
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            margin-top: 60px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items:center;
-            justify-content:center;
-            background: var(--gris-claro);
-            box-shadow: 0px 10px 10px 2px rgba(0,0,0,0.5);
-            border-radius: 40px 100px;
-            .form{
-                width: 100%;
-                background: beige;
-                padding: 20px;
-                border-radius: 20px 70px;
-            }
-            .form-title {
-                display: block;
-                width:fit-content;
-                margin: 0 auto;
-                margin-bottom: 5px;
-                background: rgb(243, 243, 191);
-                padding: 10px;
-                font-size: 20px;
-                color: var(--negro);
-                text-transform: uppercase;
-                border-radius: 20px;
-                .form-lain{
-                    color:var(--gris);
-                    background: rgb(231, 221, 221);
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 20px 30px;
-                    font-size: 25px;
-                    border-radius: 40px 70px;
-                    .form-label{
-                        margin: 10px;
-                        font-size: 10px;
-                        padding: 5px;
-                        text-transform: uppercase;
-                        color: var(--gris);
-                        background: var(--secundario);
-                        border-radius: 10px;
-                    }
-                    .form-input{
-                        width: 70%;
-                        height: 40px;
-                        text-align: center;
-                        border-radius: 5px;
-                        border: none;
-                        font-size: 16px;
-                    }
-                    .form-select{
-                        width: 100%;
-                        height: 50px;
-                        text-align: center;
-                        border-radius: 5px;
-                        border: none;
-                        font-size: 25px;
-                        color: var(--gris-claro);
-                    }
-                    
-                    .form-textarea{
-                        width: 100%;
-                        height: 70px;
-                        border-radius: 5px;
-                        font-size: 18px;
-                        text-align: center;
-                        vertical-align: center;
-                    }
-                    .form-boton{
-                        width: 30%;
-                        height: 30px;
-                        margin-top: 30px;
-                        margin-bottom: 20px;
-                        font-size: 30px;
-                        color: var(--blanco);
-                        background: gray;
-                        border: none;
-                        border-radius: 10px;
-                    }
-                    
-                    &:hover{
-                        background-color: rgb(207, 199, 199);
-                        transition: 0.4s;
-                    }
-                    .ubicacion{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                    }
-                    .ubicacion iframe{
-                        width: 100%;
-                    }
-            
-                }
-            }
-        }
-        
-        
-        
+    .lista-revestimientos {
+      text-align: center;
+      font-size: 10px;
+      padding-top: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+  }
+  /**NOSOTROS**/
+  .psn {
+    margin: 20px;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(197, 137, 26);
+    font-size: larger;
+  }
+  .lista-sn {
+    text-align: center;
+  }
+  /*FORMULARIO*/
+
+  .formulario {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gris-claro);
+    box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 40px 100px;
+  }
+  .form {
+    width: 100%;
+    background: beige;
+    padding: 20px;
+    border-radius: 20px 70px;
+  }
+
+  .form-title {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background: rgb(243, 243, 191);
+    padding: 10px;
+    font-size: 20px;
+    color: var(--negro);
+    text-transform: uppercase;
+    border-radius: 20px;
+  }
+  .form-lain {
+    color: var(--gris);
+    background: rgb(231, 221, 221);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 25px;
+    border-radius: 40px 70px;
+  }
+
+  .form-label {
+    margin: 10px;
+    font-size: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: var(--gris);
+    background: var(--secundario);
+    border-radius: 10px;
+  }
+  .form-input {
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+
+  .form-select {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    color: var(--gris-claro);
+  }
+
+  .form-textarea {
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: center;
+  }
+
+  .form-boton {
+    width: 30%;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: var(--blanco);
+    background: gray;
+    border: none;
+    border-radius: 10px;
+    &:hover {
+      background-color: rgb(207, 199, 199);
+      transition: 0.4s;
+    }
+  }
+
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ubicacion iframe {
+    width: 100%;
+  }
+  /**INDEX**/
+  .itt {
+    margin: 50px;
+    text-align: center;
+  }
+  .imagenes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+    padding: 40px;
+    padding-bottom: 70px;
+    border-radius: 40px;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+  }
+
+  .imagenes-grid img {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+  }
+
+  .imagenes-grid img:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuentePrincipal);
+    text-decoration: none;
+  }
+  /**PREGUNTAS FRECUENTES**/
+
+  .contor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    margin-top: 20px;
+    .titu {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      font-style: italic;
+    }
+
+    .colocacion-pago {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+    .mg {
+      margin: 30px;
+    }
+    .lista-mg {
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
 }
