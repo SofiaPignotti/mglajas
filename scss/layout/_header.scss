@@ -1,6 +1,6 @@
 header {
   max-height: 8vh;
-  background-color: rgb(212, 209, 165);
+  background-color: $color-beige1;
   .nav {
     --state-hamburguer: scale(0);
     --state-close: scale(0);
@@ -53,11 +53,11 @@ header {
       .nav-item {
         list-style: none;
         .nav-link {
-          color: black;
+          color: $color-negro;
           text-decoration: none;
           letter-spacing: none;
           &:hover {
-            color: black;
+            color: $color-negro;
             background: rgb(228, 228, 172);
             transform: scale(1.1);
             transition: 1s;
