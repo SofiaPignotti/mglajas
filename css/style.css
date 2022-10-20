@@ -1,6 +1,6 @@
 header {
-  max-height: 8vh;
-  background-color: #d4d1a5; }
+  max-height: 12vh;
+  background: #d4d1a5; }
   header .nav {
     --state-hamburguer: scale(0);
     --state-close: scale(0);
@@ -55,6 +55,9 @@ header {
             transform: scale(1.1);
             transition: 1s; }
 
+body {
+  margin: 0px; }
+
 main {
   /**REVESTIMIENTOS**/
   /**NOSOTROS**/
@@ -62,9 +65,9 @@ main {
   /**INDEX**/
   /**PREGUNTAS FRECUENTES**/ }
   main h1 {
-    padding-top: 12rem;
+    padding: 1rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 4rem;
     color: #c5891a; }
   main .imggg {
     height: 400px;
@@ -109,7 +112,7 @@ main {
     max-width: 1000px;
     margin: auto;
     padding: 60px;
-    margin-top: 20px; }
+    margin-top: 10px; }
     main .column .parrafo-imagen {
       text-align: center;
       padding-top: 50px;
@@ -278,7 +281,7 @@ footer {
   text-align: center;
   margin-top: 20px;
   padding: 20px;
-  background-color: #b3c04e; }
+  background-color: beige; }
 
 /*RESPONSIVE*/
 /*TABLET*/
