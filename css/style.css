@@ -319,3 +319,15 @@ footer {
     grid-template-columns: repeat(1, 1fr); }
   .column {
     padding: 0px; } }
+
+/*mixin para grid*/
+main .imagenes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px; }
+
+/*mixin para flex*/
+main .formularios {
+  display: flex;
+  justify-content: center;
+  align-items: center; }

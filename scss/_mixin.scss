@@ -1,0 +1,24 @@
+/*mixin para grid*/
+@mixin grid($columnas, $espacios) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: 30px;
+  }
+  main {
+    .imagenes-grid {
+      @include grid(2, 1fr);
+    }
+  }
+  
+  /*mixin para flex*/
+  @mixin flexible($dis, $just, $align) {
+    display: $dis;
+    justify-content: $just;
+    align-items: $align;
+  }
+  main {
+    .formularios {
+      @include flexible(flex, center, center);
+    }
+  }
+  
